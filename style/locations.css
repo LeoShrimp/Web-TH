@@ -1,0 +1,41 @@
+.booking-section {
+  padding: 40px 0 70px;
+}
+.booking-section p{
+    font-size: 20px;
+}
+.map img {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+
+/* form */
+.form-label{
+    font-size: 20px;
+}
+.form-control {
+  height: 65px;
+  background: #e7ddd2;
+  border: 1px solid #000;
+}
+
+textarea.form-control {
+  height: auto;
+  resize: none;
+}
+
+.btn-send {
+  background: #f0cc12;
+  border: none;
+  width: 220px;
+  height: 65px;
+  border-radius: 8px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.btn-send:hover {
+  background: #dcb500;
+}
