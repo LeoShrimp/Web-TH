@@ -112,7 +112,7 @@ h2 {
   padding: 20px;
 }
 .products a {
-  text-decoration: none !important;
+  text-decoration: none;
   color: #000000;
 }
 .products a:hover {
