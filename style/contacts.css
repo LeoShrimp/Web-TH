@@ -1,0 +1,40 @@
+/* CONTACT */
+
+.contact-section {
+  padding: 50px;
+}
+
+.contact-title {
+  text-align: center;
+  margin: 40px;
+}
+
+.form-control {
+  height: 65px;
+  border: 2px solid #222 !important;
+}
+
+.form-label{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.review-box {
+  height: 255px !important;
+  resize: none;
+}
+
+.message-box {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.btn-send {
+  width: 190px;
+  height: 60px;
+
+  border-radius: 6px;
+
+  background: #f0cc10;
+
+  margin-top: 15px;
+}
