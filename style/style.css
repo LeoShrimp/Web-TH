@@ -27,7 +27,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: #f9d9aa;
+  color: #f9d9aa !important;
 }
 
 .nav-left,
@@ -112,11 +112,11 @@ h2 {
   padding: 20px;
 }
 .products a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #000000;
 }
 .products a:hover {
-  color: #7e4d2f;
+  color: #7e4d2f !important;
 }
 
 .square {
@@ -200,7 +200,7 @@ h2 {
   display: inline-block;
 }
 .footer-links a:hover {
-  color: #f9d9aa;
+  color: #f9d9aa !important;
 }
 .newsletter-input:focus {
   background-color: #e5e5e5;
@@ -215,7 +215,7 @@ h2 {
   width: 100%;
 }
 .btn-register:hover {
-  background-color: #dac21b;
+  background-color: #dac21b !important;
   color: #000000;
 }
 @media only screen and (min-width: 800px) {
