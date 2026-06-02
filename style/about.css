@@ -1,0 +1,48 @@
+/* TITLE */
+
+.section-title {
+  border-left: 6px solid #222;
+  padding-left: 15px;
+  margin: 30px;
+  color: #000;
+}
+
+/* IMAGE */
+
+.about-img {
+  width: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+  display: block;
+}
+
+/* CONTENT */
+
+.about-content p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+}
+
+/* CARDS */
+
+.feature-card {
+  background: #ebe0d8;
+
+  min-height: 350px;
+
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 40px;
+  margin-bottom: 30px;
+
+  border: 2px solid #c8a44a;
+}
