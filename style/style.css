@@ -3,7 +3,6 @@
   --footer-color: #7e4d2f;
   --background-color: #f9d9aa;
 }
-
 .pacifico-regular {
   font-family: "Pacifico", cursive;
   font-weight: 400;
@@ -27,6 +26,10 @@ nav a {
   color: #fff;
   text-decoration: none;
 }
+nav a:hover {
+  color: #f9d9aa;
+}
+
 .nav-left,
 .nav-right {
   display: flex;
@@ -41,7 +44,7 @@ nav a {
   color: #f9ebe0;
 }
 
-.icon_account {
+.btn_account {
   background-color: #f9ebe0;
   color: black;
   padding: 8px 16px;
@@ -87,7 +90,6 @@ h2 {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: var(--background-color);
 }
 .btn_buy {
   background-color: var(--header-color);
@@ -105,6 +107,18 @@ h2 {
 }
 
 /* DANH MỤC SẢN PHẨM */
+.products {
+  justify-content: center;
+  padding: 20px;
+}
+.products a {
+  text-decoration: none;
+  color: #000000;
+}
+.products a:hover {
+  color: #7e4d2f;
+}
+
 .square {
   background-color: #f9ebe0;
   margin: 10px;
@@ -135,6 +149,7 @@ h2 {
   text-align: center;
   padding-left: 20px;
 }
+
 /* special offers */
 .promo-banner {
   background-color: #e5ccb3;
@@ -142,7 +157,6 @@ h2 {
   overflow: hidden;
   padding: 24px;
 }
-
 
 .promo-icon img {
   max-width: 100px;
@@ -163,7 +177,7 @@ h2 {
   text-align: center;
   line-height: 1.1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  /* Tạo hiệu ứng vát đuôi tôm bằng clip-path */
+
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
   width: 45px;
 }
@@ -184,6 +198,9 @@ h2 {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
+}
+.footer-links a:hover {
+  color: #f9d9aa;
 }
 .newsletter-input:focus {
   background-color: #e5e5e5;
