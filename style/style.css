@@ -115,7 +115,7 @@ h2 {
   text-decoration: none !important;
   color: #000000;
 }
-.products:hover {
+.products a:hover {
   color: #7e4d2f !important;
 }
 
@@ -199,7 +199,7 @@ h2 {
   text-transform: uppercase;
   display: inline-block;
 }
-.footer-links:hover {
+.footer-links a:hover {
   color: #f9d9aa !important;
 }
 .newsletter-input:focus {
@@ -214,7 +214,7 @@ h2 {
   padding: 12px;
   width: 100%;
 }
-.btn-register:hover {
+.btn-register a:hover {
   background-color: #dac21b !important;
   color: #000000;
 }
