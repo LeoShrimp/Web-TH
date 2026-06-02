@@ -117,6 +117,7 @@ h2 {
 }
 .products a:hover {
   color: #7e4d2f !important;
+  background-color: red;
 }
 
 .square {
