@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
     <link rel="stylesheet" href="../style/style.css" />
-    <link rel="stylesheet" href="../style/signin.css" />
+    <link rel="stylesheet" href="../style/shoppingcart.css" />
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,8 +26,9 @@
       crossorigin="anonymous"
     />
     <title>Giỏ hàng</title>
-</head>
-<body style="background-color: var(--background-color)">
+  </head>
+  <body style="background-color: var(--background-color)">
+    <!-- header -->
     <header>
       <nav class="navbar">
         <div class="nav-left">
@@ -48,6 +49,133 @@
           </a>
         </div>
       </nav>
+      
     </header>
-</body>
+
+    <!-- shopping cart -->
+    <section class="cart-section">
+      <div class="container-fluid">
+        <!-- Search -->
+
+        <div class="search-box">
+          <input type="text" placeholder="Tìm kiếm" />
+
+          <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <!-- Header -->
+
+        <div class="cart-header row align-items-center">
+          <div class="col-1">
+            <input type="checkbox" />
+          </div>
+
+          <div class="col-5">
+            <h2>Sản phẩm</h2>
+          </div>
+
+          <div class="col-2 text-center">
+            <h2>Số lượng</h2>
+          </div>
+
+          <div class="col-2 text-center">
+            <h2>Đơn giá</h2>
+          </div>
+
+          <div class="col-2 text-center">
+            <h2>Thành tiền</h2>
+          </div>
+        </div>
+
+        <!-- Product -->
+
+        <div class="cart-item row align-items-center">
+          <div class="col-1">
+            <input type="checkbox" />
+          </div>
+
+          <div class="col-5">
+            <div class="product-info">
+              <img src="../img/cappu.png" alt="" />
+
+              <div>
+                <h3>Cappuccino</h3>
+
+                <p>
+                  Espresso kết hợp sữa hấp và lớp bọt mịn, pha từ hạt Tây Nguyên
+                  rang tại chỗ. Phục vụ nóng, có thể tùy chỉnh sữa và hương vị.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2 text-center quantity">1</div>
+
+          <div class="col-2 text-center price">30.000đ</div>
+
+          <div class="col-2 text-center">
+            <div class="action-box">
+              <span>30.000đ</span>
+
+              <i class="fa-solid fa-file-pen"></i>
+
+              <i class="fa-solid fa-trash"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copy thêm sản phẩm nếu cần -->
+
+        <div class="cart-item row align-items-center">
+          <div class="col-1">
+            <input type="checkbox" />
+          </div>
+
+          <div class="col-5">
+            <div class="product-info">
+              <img src="../img/cappu.png" alt="" />
+
+              <div>
+                <h3>Cappuccino</h3>
+
+                <p>
+                  Espresso kết hợp sữa hấp và lớp bọt mịn, pha từ hạt Tây Nguyên
+                  rang tại chỗ.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2 text-center quantity">1</div>
+
+          <div class="col-2 text-center price">30.000đ</div>
+
+          <div class="col-2 text-center">
+            <div class="action-box">
+              <span>30.000đ</span>
+
+              <i class="fa-solid fa-file-pen"></i>
+
+              <i class="fa-solid fa-trash"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Total -->
+
+        <div class="checkout-box">
+          <div class="total">
+            <label>Tổng cộng:</label>
+
+            <input type="text" />
+          </div>
+
+          <button class="checkout-btn">Thanh toán</button>
+        </div>
+      </div>
+    </section>
+
+  </body>
 </html>

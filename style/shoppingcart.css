@@ -1,0 +1,147 @@
+
+/* SEARCH */
+
+.search-box{
+    width:75%;
+    margin:40px auto;
+    display:flex;
+}
+
+.search-box input{
+    flex:1;
+    height:70px;
+
+    border:none;
+
+    background:#ece1d8;
+
+    padding:0 30px;
+
+    font-size:2rem;
+}
+
+.search-box button{
+    width:180px;
+
+    border:none;
+
+    background:#a3834b;
+
+    font-size:3rem;
+}
+
+/* HEADER */
+
+.cart-header{
+    background:#ece1d8;
+    min-height:90px;
+    margin-bottom:0;
+}
+
+.cart-header h2{
+    font-size:2rem;
+    font-weight:700;
+    margin:0;
+}
+
+/* PRODUCT */
+
+.cart-item{
+    border-bottom:1px solid #d8bea1;
+    padding:0;
+}
+
+.product-info{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.product-info img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+}
+
+.product-info h3{
+    font-size:2rem;
+    font-weight:700;
+}
+
+.product-info p{
+    font-size:1.2rem;
+    max-width:500px;
+}
+
+.quantity,
+.price{
+    font-size:2rem;
+}
+
+.action-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:25px;
+
+    font-size:2rem;
+}
+
+.action-box span{
+    font-size:2rem;
+}
+
+.action-box i{
+    cursor:pointer;
+}
+
+/* CHECKBOX */
+
+input[type="checkbox"]{
+    width:30px;
+    height:30px;
+}
+
+/* TOTAL */
+
+.checkout-box{
+    margin-top:40px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:20px;
+}
+
+.total{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.total label{
+    font-size:2rem;
+}
+
+.total input{
+    width:350px;
+    height:70px;
+
+    border:1px solid #000;
+    border-radius:8px;
+
+    background:#ece1d8;
+}
+
+.checkout-btn{
+    width:280px;
+    height:70px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#f0cc10;
+
+    font-size:2rem;
+    font-weight:700;
+}
+
