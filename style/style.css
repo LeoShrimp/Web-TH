@@ -27,7 +27,7 @@ nav a {
   text-decoration: none;
 }
 .navbar a:hover {
-  color: #f9d9aa !important;
+  color: #f9d9aa;
 }
 
 .nav-left,
@@ -116,7 +116,7 @@ h2 {
   color: #000000;
 }
 .products a:hover {
-  color: #7e4d2f !important;
+  color: #7e4d2f;
 }
 
 .square {
@@ -200,7 +200,7 @@ h2 {
   display: inline-block;
 }
 .footer-links a:hover {
-  color: #f9d9aa !important;
+  color: #f9d9aa;
 }
 .newsletter-input:focus {
   background-color: #e5e5e5;
@@ -215,7 +215,7 @@ h2 {
   width: 100%;
 }
 .btn-register a:hover {
-  background-color: #dac21b !important;
+  background-color: #dac21b;
   color: #000000;
 }
 @media only screen and (min-width: 800px) {
