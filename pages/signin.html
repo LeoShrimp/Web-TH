@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/signin.css" />
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,9 +25,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <title>Trang chủ</title>
+    <title>Document</title>
   </head>
-
   <body style="background-color: var(--background-color)">
     <!-- navbar -->
     <header>
@@ -45,150 +44,48 @@
             <i class="fa fa-shopping-cart shop_cart" aria-hidden="true"></i>
             <span class="cart_count">0</span>
           </a>
-          <a href="/pages/signin.html">
+          <a href="#">
             <button class="btn_account">Đăng nhập</button>
           </a>
         </div>
       </nav>
     </header>
-
-    <!-- banner -->
-    <section class="banner">
-      <img class="banner" src="img/banner-47.png" alt="" />
-    </section>
-
-    <!-- top seller -->
-    <h2>Top Seller</h2>
-    <section class="container top_seller">
-      <div class="row">
-        <!-- Img card 1-->
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/bacxiu.png" class="card-img-top" alt="" />
-
-            <div class="card-body ca_title">
-              <h3>Bạc xỉu</h3>
-              <span>30k</span>
-            </div>
-            <p class="card_para">
-              Ly cà phê sữa đá Việt Nam với nhiều sữa đặc, ít cà phê bạc xỉu
-              thiên về vị sữa ngọt béo hơn, thường uống kèm bánh ngọt.
-            </p>
-            <button class="btn_buy">Mua</button>
+    <!-- form signin -->
+    <section class="signin_form">
+      <div class="signin">
+        <div class="form_signin">
+          <div class="form_title text-center">
+            <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
           </div>
-        </div>
-
-        <!-- Img card 2-->
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/espresso.png" class="card-img-top" alt="" />
-            <div class="card-body ca_title">
-              <h3>Espresso Macchiato</h3>
-              <span>30k</span>
+          <form action="" method="post">
+            <div class="form_box mb-3">
+              <label class="form-label" for="">Tên đăng nhập</label>
+              <input type="text" name="user" required />
             </div>
-            <p class="card_para">
-              Espresso Macchiato là một shot espresso đậm đặc, có lớp crema nâu
-              óng và thêm một thìa nhỏ foam sữa mịn trắng ở trên.
-            </p>
-            <button class="btn_buy">Mua</button>
-          </div>
-        </div>
-
-        <!-- Img card 3-->
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/latte.png" class="card-img-top" alt="" />
-            <div class="card-body ca_title">
-              <h3>Latte</h3>
-              <span>30k</span>
+            <div class="form_box mb-3">
+              <label>Mật khẩu</label>
+              <input type="password" name="password" required />
             </div>
-            <p class="card_para">
-              Ly cà phê sữa nóng với nhiều sữa, ít cà phê dễ uống, ít đắng, phù
-              hợp uống nóng.
-            </p>
-            <button class="btn_buy">Mua</button>
-          </div>
+            <div class="form_box mb-3">
+              <label>Nhập lại mật khẩu</label>
+              <input type="password" name="confirm_password" required />
+            </div>
+            <div class="form_box mb-1">
+              <label>Email</label>
+              <input type="email" name="password" />
+            </div>
+
+            <div class="text-end mb-4">
+              Đã có tài khoản?<a href="./login.html"><em>Đăng nhập</em> </a>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn_signin">Đăng ký</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
 
-    <!-- DANH MỤC SẢN PHẨM -->
-    <h2>Danh Mục Sản Phẩm</h2>
-    <section>
-      <div class="container products">
-        <div class="row">
-          <div class="col square" id="category_title">
-            <a href="#">
-              <img src="img/Cafe.png" alt="" />
-              <h3>Cafe truyền thống</h3>
-            </a>
-          </div>
-          <div class="col square" id="category_title">
-            <a href="#">
-              <img src="img/Coffee to Go.png" alt="" />
-              <h3>Cafe sữa</h3>
-            </a>
-          </div>
-          <div class="col square" id="category_title">
-            <a href="#">
-              <img src="img/Confectionery.png" alt="" />
-              <h3>Cake</h3>
-            </a>
-          </div>
-          <div class="col square" id="category_title">
-            <a href="#">
-              <img src="img/Cocktail.png" alt="" />
-              <h3>Trà & các thức uống khác</h3>
-            </a>
-          </div>
-          <div class="col square" id="category_title">
-            <a href="#">
-              <img src="img/Flour.png" alt="" />
-              <h3>Hạt cafe</h3>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- special offers -->
-    <section>
-      <div class="container py-5">
-        <div class="row g-4 justify-content-center">
-          <div class="col-12 col-md-6">
-            <div
-              class="promo-banner d-flex align-items-center justify-content-between"
-            >
-              <div class="new-offer-tag">New<br />Offer</div>
-
-              <div class="promo-icon pe-3">
-                <img src="img/combo.png" alt="" />
-              </div>
-
-              <div class="promo-content text-center flex-grow-1">
-                <h2>Combo Tiết Kiệm</h2>
-                <p>Giảm 10% khi mua 3 sản phẩm</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <div
-              class="promo-banner d-flex align-items-center justify-content-between"
-            >
-              <div class="promo-content text-center">
-                <h2>Quà Tặng Thành Viên</h2>
-                <p>Tặng 1 ly sứ (ceramic cup) cho hóa đơn >500k</p>
-              </div>
-
-              <div class="promo-icon ps-3">
-                <img src="img/membership.png" alt="Icon Quà Tặng" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- footer -->
     <footer class="custom-footer pt-5 pb-4">
       <div class="container">

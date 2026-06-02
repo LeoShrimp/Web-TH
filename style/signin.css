@@ -1,0 +1,50 @@
+.signin_form {
+  padding: 20px;
+}
+.signin {
+  margin: auto;
+  background-color: #fff;
+  overflow: hidden;
+  max-width: 600px;
+}
+.form_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  color: #000;
+  align-items: center;
+  margin: 20px;
+  padding-bottom: 50px;
+}
+.form_signin {
+  padding: 30px 40px;
+  border: 5px #000 solid;
+}
+/* label */
+.form_box {
+  margin-bottom: 20px;
+}
+
+.form_box input {
+  width: 100%;
+  height: 55px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 18px;
+  background: white;
+}
+.btn_signin {
+  display: block;
+  width: 85%;
+  margin: 50px auto 0;
+
+  background: #1c1010;
+  color: white;
+
+  border-radius: 40px;
+
+  height: 70px;
+
+  font-size: 28px;
+  cursor: pointer;
+}
