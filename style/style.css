@@ -26,7 +26,7 @@ nav a {
   color: #fff;
   text-decoration: none;
 }
-nav a:hover {
+.navbar a:hover {
   color: #f9d9aa !important;
 }
 
@@ -115,7 +115,7 @@ h2 {
   text-decoration: none !important;
   color: #000000;
 }
-.products a:hover {
+.products:hover {
   color: #7e4d2f !important;
 }
 
@@ -199,7 +199,7 @@ h2 {
   text-transform: uppercase;
   display: inline-block;
 }
-.footer-links a:hover {
+.footer-links:hover {
   color: #f9d9aa !important;
 }
 .newsletter-input:focus {
