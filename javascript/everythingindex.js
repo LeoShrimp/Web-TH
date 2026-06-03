@@ -46,11 +46,21 @@ document.addEventListener("click", (e) => {
 
 // CẶP NHẬT GIỎ HÀNG
 function updateCartCount() {
-  const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+  const cart =
+    JSON.parse(
+      localStorage.getItem("cart")
+    ) || [];
 
-  const cartCount = document.getElementById("cartCount");
+  const count =
+    cart.reduce(
+      (sum, item) =>
+        sum + item.quantity,
+      0
+    );
+
+  const cartCount =
+    document.getElementById("cartCount");
 
   if (cartCount) {
     cartCount.textContent = count;
@@ -59,21 +69,4 @@ function updateCartCount() {
 
 updateCartCount();
 
-function showNotification(message) {
-  const container =
-    document.getElementById("toast-container") || createToastContainer();
-  const toast = document.createElement("div");
-  toast.className = "toast-message";
-  toast.innerText = message;
 
-  container.appendChild(toast);
-
-  // Trigger slide-in animation
-  setTimeout(() => toast.classList.add("show"), 10);
-
-  // Fade out and remove
-  setTimeout(() => {
-    toast.classList.remove("show");
-    setTimeout(() => toast.remove(), 300);
-  }, 3000);
-}

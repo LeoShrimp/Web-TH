@@ -8,12 +8,12 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   const user = JSON.parse(localStorage.getItem("user"));
 
   if (!user) {
-    alert("Chưa có tài khoản");
+    showNotification("Chưa có tài khoản");
     return;
   }
 
   if (username === user.username && password === user.password) {
-    alert("Đăng nhập thành công");
+    showNotification("Đăng nhập thành công");
 
     localStorage.setItem("isLogin", "true");
 
@@ -23,3 +23,20 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   }
 });
 
+function showNotification(message) {
+  const container = document.getElementById("toast-container") || createToastContainer();
+  const toast = document.createElement("div");
+  toast.className = "toast-message";
+  toast.innerText = message;
+  
+  container.appendChild(toast);
+  
+  // Trigger slide-in animation
+  setTimeout(() => toast.classList.add("show"), 10);
+  
+  // Fade out and remove
+  setTimeout(() => {
+    toast.classList.remove("show");
+    setTimeout(() => toast.remove(), 300);
+  }, 3000);
+}

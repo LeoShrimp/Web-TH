@@ -129,3 +129,20 @@ document.querySelector(".checkout-btn").addEventListener("click", () => {
   location.reload();
 });
 
+function showNotification(message) {
+  const container = document.getElementById("toast-container") || createToastContainer();
+  const toast = document.createElement("div");
+  toast.className = "toast-message";
+  toast.innerText = message;
+  
+  container.appendChild(toast);
+  
+  // Trigger slide-in animation
+  setTimeout(() => toast.classList.add("show"), 10);
+  
+  // Fade out and remove
+  setTimeout(() => {
+    toast.classList.remove("show");
+    setTimeout(() => toast.remove(), 300);
+  }, 3000);
+}
