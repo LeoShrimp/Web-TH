@@ -1,3 +1,4 @@
+//HIỂN THỊ AVATAR KHI ĐĂNG NHẬP
 document.addEventListener("DOMContentLoaded", () => {
   const accountArea = document.getElementById("accountArea");
 
@@ -34,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// NÚT ĐĂNG XUẤT
 document.addEventListener("click", (e) => {
   if (e.target.id === "logoutBtn") {
     localStorage.removeItem("isLogin");
@@ -42,6 +44,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
+// CẶP NHẬT GIỎ HÀNG
 function updateCartCount() {
 
   const cart =

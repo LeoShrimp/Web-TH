@@ -1,3 +1,4 @@
+// THÊM HÀNG VÀO GIỎ HÀNG
 const buyButtons = document.querySelectorAll(".add-cart");
 
 buyButtons.forEach((btn) => {
@@ -23,5 +24,9 @@ buyButtons.forEach((btn) => {
     localStorage.setItem("cart", JSON.stringify(cart));
 
     alert("Đã thêm vào giỏ hàng");
+
+    location.reload();
   });
+  
 });
+

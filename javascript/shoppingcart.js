@@ -1,3 +1,4 @@
+// HIỆN THỊ ĐỒ TỪ MENU
 const cartContainer = document.getElementById("cartContainer");
 
 const totalPrice = document.getElementById("totalPrice");
@@ -18,10 +19,6 @@ function renderCart() {
 
       <div class="cart-item row align-items-center">
 
-        <div class="col-1">
-          <input type="checkbox">
-        </div>
-
         <div class="col-5">
           <div class="product-info">
 
@@ -40,7 +37,7 @@ function renderCart() {
           </div>
         </div>
 
-        <div class="col-2 text-center">
+        <div class="col-2 text-center btn-value">
 
           <button
             onclick="decreaseQty(${index})">
@@ -56,7 +53,7 @@ function renderCart() {
 
         </div>
 
-        <div class="col-2 text-center">
+        <div class="col-2 text-center price">
           ${item.price.toLocaleString()}đ
         </div>
 
@@ -87,6 +84,8 @@ function renderCart() {
 
 renderCart();
 
+// TĂNG GIẢM SỐ LƯỢNG
+
 function increaseQty(index) {
   cart[index].quantity++;
 
@@ -115,6 +114,7 @@ function removeItem(index) {
   renderCart();
 }
 
+// THANH TOÁN
 document.querySelector(".checkout-btn").addEventListener("click", () => {
   if (cart.length === 0) {
     alert("Giỏ hàng đang trống");

@@ -14,8 +14,8 @@
 
 /* PRODUCT */
 
-.cart-item{
-  background-color: #F7DBC5;
+.cart-item {
+  background-color: #f7dbc5;
   padding: 5px;
 }
 
@@ -47,22 +47,16 @@
   justify-content: center;
   gap: 25px;
 
-  font-size: 2rem;
+  font-size: 20px;
 }
 
-.action-box span {
-  font-size: 2rem;
+.btn-value {
+  font-size: 20px;
 }
 
-.action-box i {
-  cursor: pointer;
-}
-
-/* CHECKBOX */
-
-input[type="checkbox"] {
-  width: 30px;
-  height: 30px;
+.btn-value button {
+  border: none;
+  font-size: 20px;
 }
 
 /* TOTAL */
@@ -88,6 +82,8 @@ input[type="checkbox"] {
   border: 1px solid #000;
   border-radius: 8px;
 
+  font-size: 20px;
+
   background: #ece1d8;
 }
 
@@ -97,6 +93,8 @@ input[type="checkbox"] {
 
   border: none;
   border-radius: 8px;
+
+  font-size: 20px;
 
   background: #f0cc10;
 }
