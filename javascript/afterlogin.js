@@ -7,15 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (isLogin === "true" && user) {
     accountArea.innerHTML = `
-        <img src="/img/profile.png" class="avatar">
-    `;
-  } else {
-    accountArea.innerHTML = `
-        <a href="pages/login.html">
-            <button class="btn_account">
-                Đăng nhập
-            </button>
-        </a>
-    `;
+            <div class="user-menu">
+                <img src="../img/profile.png" class="avatar" alt="">
+                <span>${user.username}</span>
+            </div>
+        `;
   }
 });
