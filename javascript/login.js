@@ -40,3 +40,16 @@ function showNotification(message) {
     setTimeout(() => toast.remove(), 300);
   }, 3000);
 }
+function createToastContainer() {
+  const container = document.createElement("div");
+  container.id = "toast-container";
+  container.style.position = "fixed";
+  container.style.bottom = "20px";
+  container.style.right = "20px";
+  container.style.zIndex = "9999";
+  container.style.display = "flex";
+  container.style.flexDirection = "column";
+  container.style.gap = "10px";
+  document.body.appendChild(container);
+  return container;
+}
