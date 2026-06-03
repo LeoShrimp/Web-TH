@@ -14,9 +14,9 @@
 
 /* PRODUCT */
 
-.cart-item {
-  border-bottom: 1px solid #d8bea1;
-  padding: 0;
+.cart-item{
+  background-color: #F7DBC5;
+  padding: 5px;
 }
 
 .product-info {

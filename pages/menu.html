@@ -43,7 +43,7 @@
           <a href="./menu.html">Menu</a>
           <a href="./shoppingcart.html">
             <i class="fa fa-shopping-cart shop_cart" aria-hidden="true"></i>
-            <span class="cart_count">0</span>
+            <span class="cart_count" id="cartCount">0</span>
           </a>
           <div id="accountArea">
             <a href="login.html">
@@ -80,7 +80,15 @@
                   <span>30k</span>
                 </div>
 
-                <button>Mua</button>
+                <button
+                  class="add-cart"
+                  data-name="Espresso Macchiato"
+                  data-id="1"
+                  data-price="30000"
+                  data-image="../img/espresso.png"
+                >
+                  Mua
+                </button>
               </div>
             </div>
           </div>
@@ -96,7 +104,15 @@
 
                   <span>30k</span>
                 </div>
-                <button>Mua</button>
+                <button
+                  class="add-cart"
+                  data-name="Latte"
+                  data-id="2"
+                  data-price="30000"
+                  data-image="../img/latte.png"
+                >
+                  Mua
+                </button>
               </div>
             </div>
           </div>
@@ -113,7 +129,15 @@
                   <span>30k</span>
                 </div>
 
-                <button>Mua</button>
+                <button
+                  class="add-cart"
+                  data-name="Bạc xỉu"
+                  data-id="3"
+                  data-price="30000"
+                  data-image="../img/bacxiu.png"
+                >
+                  Mua
+                </button>
               </div>
             </div>
           </div>
@@ -130,7 +154,15 @@
                   <span>35k</span>
                 </div>
 
-                <button>Mua</button>
+                <button
+                  class="add-cart"
+                  data-name="Cappucino"
+                  data-id="4"
+                  data-price="35000"
+                  data-image="../img/espresso.png"
+                >
+                  Mua
+                </button>
               </div>
             </div>
           </div>
@@ -146,7 +178,15 @@
 
                   <span>30k</span>
                 </div>
-                <button>Mua</button>
+                <button
+                  class="add-cart"
+                  data-name="Cà phê sữa"
+                  data-id="5"
+                  data-price="30000"
+                  data-image="../img/coffeecup.png"
+                >
+                  Mua
+                </button>
               </div>
             </div>
           </div>
@@ -163,7 +203,15 @@
                   <span>30k</span>
                 </div>
 
-                <button>Mua</button>
+                <button
+                  class="add-cart"
+                  data-name="Cà phê đen"
+                  data-id="6"
+                  data-price="30000"
+                  data-image="../img/cafeden.png"
+                >
+                  Mua
+                </button>
               </div>
             </div>
           </div>
@@ -180,7 +228,15 @@
                   <span>30k</span>
                 </div>
 
-                <button>Mua</button>
+                <button
+                  class="add-cart"
+                  data-name="Cam ép"
+                  data-id="7"
+                  data-price="30000"
+                  data-image="../img/camep.png"
+                >
+                  Mua
+                </button>
               </div>
             </div>
           </div>
@@ -196,7 +252,15 @@
 
                   <span>30k</span>
                 </div>
-                <button>Mua</button>
+                <button
+                  class="add-cart"
+                  data-name="Trà chanh"
+                  data-id="8"
+                  data-price="30000"
+                  data-image="../img/trachanh.png"
+                >
+                  Mua
+                </button>
               </div>
             </div>
           </div>
@@ -213,7 +277,15 @@
                   <span>35k</span>
                 </div>
 
-                <button>Mua</button>
+                <button
+                  class="add-cart"
+                  data-name="Matcha latte"
+                  data-id="9"
+                  data-price="35000"
+                  data-image="../img/matcha.png"
+                >
+                  Mua
+                </button>
               </div>
             </div>
           </div>
@@ -230,7 +302,15 @@
                   <span>50k</span>
                 </div>
 
-                <button>Mua</button>
+                <button
+                  class="add-cart"
+                  data-name="Cheesecake"
+                  data-id="10"
+                  data-price="50000"
+                  data-image="../img/cheesecake.png"
+                >
+                  Mua
+                </button>
               </div>
             </div>
           </div>
@@ -246,7 +326,15 @@
 
                   <span>40k</span>
                 </div>
-                <button>Mua</button>
+                <button
+                  class="add-cart"
+                  data-name="Tiramisu cốc"
+                  data-id="11"
+                  data-price="40000"
+                  data-image="../img/tiramisu.png"
+                >
+                  Mua
+                </button>
               </div>
             </div>
           </div>
@@ -263,7 +351,15 @@
                   <span>50k</span>
                 </div>
 
-                <button>Mua</button>
+                <button
+                  class="add-cart"
+                  data-name="Pick me up"
+                  data-id="12"
+                  data-price="50000"
+                  data-image="../img/pickmeup.png"
+                >
+                  Mua
+                </button>
               </div>
             </div>
           </div>
@@ -355,6 +451,7 @@
     </footer>
     <script src="../javascript/afterlogin.js"></script>
     <script src="../javascript/searchbar.js"></script>
+    <script src="../javascript/shopping.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

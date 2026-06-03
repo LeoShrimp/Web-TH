@@ -42,7 +42,7 @@
           <a href="./menu.html">Menu</a>
           <a href="./shoppingcart.html">
             <i class="fa fa-shopping-cart shop_cart" aria-hidden="true"></i>
-            <span class="cart_count">0</span>
+            <span class="cart_count" id="cartCount">0</span>
           </a>
           <div id="accountArea">
             <a href="login.html">
@@ -80,87 +80,14 @@
           </div>
         </div>
 
-        <!-- Product -->
-
-        <div class="cart-item row align-items-center">
-          <div class="col-1">
-            <input type="checkbox" />
-          </div>
-
-          <div class="col-5">
-            <div class="product-info">
-              <img src="../img/cappu.png" alt="" />
-
-              <div>
-                <h3>Cappuccino</h3>
-
-                <p>
-                  Espresso kết hợp sữa hấp và lớp bọt mịn, pha từ hạt Tây Nguyên
-                  rang tại chỗ. Phục vụ nóng, có thể tùy chỉnh sữa và hương vị.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-2 text-center quantity">1</div>
-
-          <div class="col-2 text-center price">30.000đ</div>
-
-          <div class="col-2 text-center">
-            <div class="action-box">
-              <span>30.000đ</span>
-
-              <i class="fa-solid fa-file-pen"></i>
-
-              <i class="fa-solid fa-trash"></i>
-            </div>
-          </div>
-        </div>
-
-        <!-- Copy thêm sản phẩm nếu cần -->
-
-        <div class="cart-item row align-items-center">
-          <div class="col-1">
-            <input type="checkbox" />
-          </div>
-
-          <div class="col-5">
-            <div class="product-info">
-              <img src="../img/cappu.png" alt="" />
-
-              <div>
-                <h3>Cappuccino</h3>
-
-                <p>
-                  Espresso kết hợp sữa hấp và lớp bọt mịn, pha từ hạt Tây Nguyên
-                  rang tại chỗ.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-2 text-center quantity">1</div>
-
-          <div class="col-2 text-center price">30.000đ</div>
-
-          <div class="col-2 text-center">
-            <div class="action-box">
-              <span>30.000đ</span>
-
-              <i class="fa-solid fa-file-pen"></i>
-
-              <i class="fa-solid fa-trash"></i>
-            </div>
-          </div>
-        </div>
-
+        <div id="cartContainer"></div>
         <!-- Total -->
 
         <div class="checkout-box">
           <div class="total">
             <label>Tổng cộng:</label>
 
-            <input type="text" />
+            <input type="text" id="totalPrice" readonly />
           </div>
 
           <button class="checkout-btn">Thanh toán</button>
@@ -168,6 +95,7 @@
       </div>
     </section>
     <script src="../javascript/afterlogin.js"></script>
+    <script src="../javascript/shoppingcart.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
