@@ -35,6 +35,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const accountAreaM = document.getElementById("accountAreaM");
+
+  const isLogin = localStorage.getItem("isLogin");
+
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  if (isLogin === "true" && user) {
+    accountAreaM.innerHTML = `
+<a href="/pages/profile.html">
+          <img
+            src="/img/profile.png"
+            class="avatar"
+          >
+        </a>
+`;
+  }
+});
+
 // NÚT ĐĂNG XUẤT
 document.addEventListener("click", (e) => {
   if (e.target.id === "logoutBtn") {
@@ -46,21 +65,11 @@ document.addEventListener("click", (e) => {
 
 // CẶP NHẬT GIỎ HÀNG
 function updateCartCount() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  const cart =
-    JSON.parse(
-      localStorage.getItem("cart")
-    ) || [];
+  const count = cart.reduce((sum, item) => sum + item.quantity, 0);
 
-  const count =
-    cart.reduce(
-      (sum, item) =>
-        sum + item.quantity,
-      0
-    );
-
-  const cartCount =
-    document.getElementById("cartCount");
+  const cartCount = document.getElementById("cartCount");
 
   if (cartCount) {
     cartCount.textContent = count;
@@ -69,11 +78,9 @@ function updateCartCount() {
 
 updateCartCount();
 
-
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
 
 menuToggle.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
-
