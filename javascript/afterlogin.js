@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (isLogin === "true" && user) {
     accountArea.innerHTML = `
-        <img src="./img/profile.png" class="avatar">
+        <img src="/img/profile.png" class="avatar">
     `;
   } else {
     accountArea.innerHTML = `
