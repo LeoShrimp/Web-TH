@@ -29,7 +29,7 @@
   </head>
   <body style="background-color: var(--background-color)">
     <!-- navbar -->
-    <header>
+    <header class="menu-desktop">
       <nav class="navbar">
         <div class="nav-left">
           <a href="../index.html">Home</a>
@@ -48,6 +48,43 @@
             <a href="login.html">
               <button class="btn_account">Đăng nhập</button>
             </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- HEADER MOBILE -->
+    <header class="menu-mobile">
+      <nav class="navbar">
+        <!-- Logo -->
+        <a class="logo" href="../index.html">Morning Cup</a>
+
+        <!-- Nút menu mobile -->
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Menu -->
+        <div class="nav-menu" id="navMenu">
+          <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="pages/locations.html">Locations</a>
+            <a href="pages/contacts.html">Contacts</a>
+          </div>
+
+          <div class="nav-right">
+            <a href="pages/about.html">About</a>
+            <a href="pages/menu.html">Menu</a>
+
+            <a href="pages/shoppingcart.html">
+              <i class="fa fa-shopping-cart shop_cart"></i>
+              <span class="cart_count">0</span>
+            </a>
+
+            <div id="accountArea">
+              <a href="pages/login.html">
+                <button class="btn_account">Đăng nhập</button>
+              </a>
+            </div>
           </div>
         </div>
       </nav>

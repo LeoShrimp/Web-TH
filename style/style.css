@@ -125,4 +125,56 @@ nav a {
     padding: 0;
     height: 100%;
   }
+  .menu-mobile {
+  display: none;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+
+  .menu-desktop{
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+
+    width: 100%;
+
+    flex-direction: column;
+
+    background-color: var(--header-color);
+    
+    padding: 20px 0;
+
+    margin-top: 15px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  .btn_account {
+    width: 150px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
 }
