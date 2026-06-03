@@ -1,38 +1,28 @@
-document
-.getElementById("signupForm")
-.addEventListener("submit", function(e){
+document.getElementById("signupForm").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    e.preventDefault();
+  const username = document.getElementById("user").value;
 
-    const username =
-        document.getElementById("user").value;
+  const email = document.getElementById("email").value;
 
-    const email =
-        document.getElementById("email").value;
+  const password = document.getElementById("password").value;
 
-    const password =
-        document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirmPassword").value;
 
-    const confirmPassword =
-        document.getElementById("confirmPassword").value;
+  if (password !== confirmPassword) {
+    alert("Mật khẩu không khớp");
+    return;
+  }
 
-    if(password !== confirmPassword){
-        alert("Mật khẩu không khớp");
-        return;
-    }
+  const user = {
+    username,
+    email,
+    password,
+  };
 
-    const user = {
-        username,
-        email,
-        password
-    };
+  localStorage.setItem("user", JSON.stringify(user));
 
-    localStorage.setItem(
-        "user",
-        JSON.stringify(user)
-    );
+  alert("Đăng ký thành công");
 
-    alert("Đăng ký thành công");
-
-    window.location.href = "login.html";
+  window.location.href = "login.html";
 });
