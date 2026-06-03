@@ -19,6 +19,6 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
     window.location.href = "../index.html";
   } else {
-    alert("Sai tài khoản hoặc mật khẩu");
+    showNotification("Sai tài khoản hoặc mật khẩu");
   }
 });

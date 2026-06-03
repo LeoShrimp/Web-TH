@@ -122,7 +122,7 @@ document.querySelector(".checkout-btn").addEventListener("click", () => {
     return;
   }
 
-  alert("Thanh toán thành công");
+  showNotification("Thanh toán thành công");
 
   localStorage.removeItem("cart");
 

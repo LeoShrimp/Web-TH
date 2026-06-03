@@ -23,7 +23,7 @@ buyButtons.forEach((btn) => {
 
     localStorage.setItem("cart", JSON.stringify(cart));
 
-    alert("Đã thêm vào giỏ hàng");
+    showNotification("Đã thêm vào giỏ hàng");
 
     location.reload();
   });

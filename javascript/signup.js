@@ -22,7 +22,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
 
   localStorage.setItem("user", JSON.stringify(user));
 
-  alert("Đăng ký thành công");
+  showNotification("Đăng ký thành công");
 
   window.location.href = "login.html";
 });
