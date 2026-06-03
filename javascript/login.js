@@ -16,10 +16,8 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     showToast("Đăng nhập thành công");
 
     localStorage.setItem("isLogin", "true");
-
     setTimeout(() => {
       window.location.href = "../index.html";
-      
     }, 2000);
   } else {
     showToast("Sai tài khoản hoặc mật khẩu");

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <ul class="dropdown-menu dropdown-menu-end">
         <li>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="/pages/profile.html">
                 Hồ sơ
             </a>
         </li>

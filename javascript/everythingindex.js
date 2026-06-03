@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <ul class="dropdown-menu dropdown-menu-end">
         <li>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="pages/profile.html">
                 Hồ sơ
             </a>
         </li>
@@ -77,13 +77,3 @@ menuToggle.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-function showToast(message) {
-  const toast = document.getElementById("toast");
-
-  toast.textContent = message;
-  toast.classList.add("show");
-
-  setTimeout(() => {
-    toast.classList.remove("show");
-  }, 3000);
-}
