@@ -1,16 +1,11 @@
 /* banner */
-/* .banner {
-  width: 100%;
-  height: 550px;
-  object-fit: cover;
-} */
 .banner-slider {
     margin-bottom: 60px;
 }
 
 .carousel-item img {
     width: 100%;
-    height: 650px;
+    height: 550px;
     object-fit: cover;
 }
 
