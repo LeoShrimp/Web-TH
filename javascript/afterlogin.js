@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (isLogin === "true" && user) {
     accountArea.innerHTML = `
             <div class="user-menu">
-                <img src="img/profile.png" alt="">
+                <img src="/img/profile.png" class="avatar" alt="">
                 <span>${user.username}</span>
             </div>
         `;

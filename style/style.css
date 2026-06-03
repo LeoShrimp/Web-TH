@@ -61,6 +61,26 @@ nav a {
   /* cursor: pointer; */
 }
 
+/* user menu */
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 5 px;
+
+  cursor: pointer;
+}
+
+.user-menu span {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.avatar {
+  width: 50px;
+  height: 100%;
+  border-radius: 50px;
+}
+
 /* footer */
 .custom-footer {
   background-color: #7e4d2f;
@@ -98,6 +118,7 @@ nav a {
   background-color: #dac21b;
   color: #000000;
 }
+
 @media only screen and (min-width: 800px) {
   html {
     margin: 0;
