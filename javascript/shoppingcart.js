@@ -128,3 +128,4 @@ document.querySelector(".checkout-btn").addEventListener("click", () => {
 
   location.reload();
 });
+

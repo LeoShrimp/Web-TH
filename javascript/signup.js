@@ -26,3 +26,4 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
 
   window.location.href = "login.html";
 });
+
