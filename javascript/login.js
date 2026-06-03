@@ -17,7 +17,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
     localStorage.setItem("isLogin", "true");
 
-    window.location.href = "./index.html";
+    window.location.href = "index.html";
   } else {
     alert("Sai tài khoản hoặc mật khẩu");
   }
