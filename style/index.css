@@ -119,3 +119,22 @@ h2 {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
   width: 45px;
 }
+
+/* user menu */
+.user-menu{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    cursor:pointer;
+}
+
+.user-icon{
+    font-size:40px;
+    color:#5c3a21;
+}
+
+.user-menu span{
+    font-size:18px;
+    font-weight:500;
+}

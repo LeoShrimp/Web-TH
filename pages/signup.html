@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
     <link rel="stylesheet" href="../style/style.css" />
-    <link rel="stylesheet" href="../style/signin.css" />
+    <link rel="stylesheet" href="../style/signup.css" />
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,7 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <!-- BOOTSTRAP -->
     <link
@@ -41,42 +44,44 @@
             <i class="fa fa-shopping-cart shop_cart" aria-hidden="true"></i>
             <span class="cart_count">0</span>
           </a>
-          <a href="signin.html">
-            <button class="btn_account">Đăng nhập</button>
-          </a>
+          <div id="accountArea">
+            <a href="login.html">
+              <button class="btn_account">Đăng nhập</button>
+            </a>
+          </div>
         </div>
       </nav>
     </header>
-    <!-- form signin -->
-    <section class="signin_form">
-      <div class="signin">
-        <div class="form_signin">
+    <!-- form signup -->
+    <section class="signup_form">
+      <div class="signup">
+        <div class="form_signup">
           <div class="form_title text-center">
             <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
           </div>
-          <form action="" method="post">
+          <form id="signupForm">
             <div class="form_box mb-3">
               <label class="form-label" for="">Tên đăng nhập</label>
-              <input type="text" name="user" required />
+              <input type="text" id="user" required />
             </div>
             <div class="form_box mb-3">
               <label>Mật khẩu</label>
-              <input type="password" name="password" required />
+              <input type="password" id="password" required />
             </div>
             <div class="form_box mb-3">
               <label>Nhập lại mật khẩu</label>
-              <input type="password" name="confirm_password" required />
+              <input type="password" id="confirmPassword" required />
             </div>
             <div class="form_box mb-1">
-              <label>Email</label>
-              <input type="email" name="password" />
+              <label>Email (không bắt buộc)</label>
+              <input type="email" id="email"/>
             </div>
 
             <div class="text-end mb-4">
               Đã có tài khoản?<a href="./login.html"><em>Đăng nhập</em> </a>
             </div>
             <div class="text-center">
-              <button type="submit" class="btn_signin">Đăng ký</button>
+              <button type="submit" class="btn_signup">Đăng ký</button>
             </div>
           </form>
         </div>
@@ -170,5 +175,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="/javascript/signup.js"></script>
   </body>
 </html>

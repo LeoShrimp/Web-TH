@@ -1,7 +1,7 @@
-.signin_form {
+.signup_form {
   padding: 20px;
 }
-.signin {
+.signup {
   margin: auto;
   background-color: #fff;
   overflow: hidden;
@@ -15,7 +15,7 @@
   margin: 20px;
   padding-bottom: 50px;
 }
-.form_signin {
+.form_signup {
   padding: 30px 40px;
   border: 5px #000 solid;
 }
@@ -33,7 +33,7 @@
   font-size: 18px;
   background: white;
 }
-.btn_signin {
+.btn_signup {
   display: block;
   width: 85%;
   margin: 50px auto 0;

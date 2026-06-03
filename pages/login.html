@@ -13,7 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <!-- BOOTSTRAP -->
     <link
@@ -41,9 +44,11 @@
             <i class="fa fa-shopping-cart shop_cart" aria-hidden="true"></i>
             <span class="cart_count">0</span>
           </a>
-          <a href="signin.html">
-            <button class="btn_account">Đăng nhập</button>
-          </a>
+          <div id="accountArea">
+            <a href="login.html">
+              <button class="btn_account">Đăng nhập</button>
+            </a>
+          </div>
         </div>
       </nav>
     </header>
@@ -55,7 +60,7 @@
           <div class="form_title text-center">
             <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
           </div>
-          <form action="" method="post">
+          <form id="loginForm">
             <div class="form_box mb-3">
               <label class="form-label" for="">Tên đăng nhập</label>
               <input type="text" name="user" required />
@@ -68,6 +73,7 @@
             <div class="mb-4">
               <a href="#"><em>Quên mật khẩu?</em></a>
             </div>
+            <a href="./signup.html"><em>Đăng ký?</em></a>
             <div class="text-center">
               <button type="submit" class="btn_login">Đăng nhập</button>
             </div>
@@ -75,6 +81,7 @@
         </div>
       </div>
     </section>
+
     <!-- footer -->
     <footer class="custom-footer pt-5 pb-4">
       <div class="container">
@@ -162,5 +169,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="../javascript/login.js"></script>
   </body>
 </html>

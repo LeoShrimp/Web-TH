@@ -2,6 +2,36 @@
   padding: 40px 0 70px;
 }
 
+/* SEARCH */
+
+.search-box {
+  width: 75%;
+  margin: 40px auto;
+  display: flex;
+
+  font-size: 40px;
+}
+.search-box input {
+  flex: 1;
+  height: 70px;
+
+  border: none;
+
+  background: #ece1d8;
+
+  padding: 0 30px;
+
+  font-size: 20px;
+}
+
+.search-box button {
+  width: 180px;
+
+  border: none;
+
+  background: #a3834b;
+}
+
 /* CARD */
 
 .product-card {
