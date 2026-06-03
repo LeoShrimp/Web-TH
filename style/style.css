@@ -126,8 +126,38 @@ nav a {
     height: 100%;
   }
   .menu-mobile {
-  display: none;
+    display: none;
+  }
 }
+/* pop up */
+
+#toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  min-width: 250px;
+  padding: 15px 20px;
+
+  background: white;
+  color: black;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+
+  border: 2px solid black;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.3s ease;
+
+  z-index: 9999;
+}
+
+#toast.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media only screen and (max-width: 768px) {
@@ -136,7 +166,7 @@ nav a {
     flex-wrap: wrap;
   }
 
-  .menu-desktop{
+  .menu-desktop {
     display: none;
   }
   .menu-mobile {
@@ -151,7 +181,7 @@ nav a {
     flex-direction: column;
 
     background-color: var(--header-color);
-    
+
     padding: 20px 0;
 
     margin-top: 15px;
@@ -167,7 +197,6 @@ nav a {
     gap: 15px;
     width: 100%;
     text-align: center;
-    
   }
 
   .btn_account {
