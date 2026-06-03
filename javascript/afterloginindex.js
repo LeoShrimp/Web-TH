@@ -7,10 +7,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (isLogin === "true" && user) {
     accountArea.innerHTML = `
-            <div class="user-menu">
-                <img src="img/profile.png" class="avatar" alt="">
-                <span>${user.username}</span>
-            </div>
-        `;
+<div class="dropdown">
+
+    <img
+        src="img/profile.png"
+        class="avatar dropdown-toggle"
+        data-bs-toggle="dropdown"
+    >
+
+    <ul class="dropdown-menu">
+        <li>
+            <a class="dropdown-item" href="#">
+                Hồ sơ
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="#" id="logoutBtn">
+                Đăng xuất
+            </a>
+        </li>
+    </ul>
+
+</div>
+`;
+  }
+});
+
+document.addEventListener("click", (e) => {
+  if (e.target.id === "logoutBtn") {
+    localStorage.removeItem("isLogin");
+
+    window.location.reload();
   }
 });
