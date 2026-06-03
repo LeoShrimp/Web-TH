@@ -1,24 +1,39 @@
-document.getElementById("loginForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+document
+.getElementById("loginForm")
+.addEventListener("submit", function(e){
 
-  const username = document.getElementById("username").value;
+    e.preventDefault();
 
-  const password = document.getElementById("password").value;
+    const username =
+        document.getElementById("username").value;
 
-  const user = JSON.parse(localStorage.getItem("user"));
+    const password =
+        document.getElementById("password").value;
 
-  if (!user) {
-    alert("Chưa có tài khoản");
-    return;
-  }
+    const user =
+        JSON.parse(localStorage.getItem("user"));
 
-  if (username === user.username && password === user.password) {
-    alert("Đăng nhập thành công");
+    if(!user){
+        alert("Chưa có tài khoản");
+        return;
+    }
 
-    localStorage.setItem("isLogin", "true");
+    if(
+        username === user.username &&
+        password === user.password
+    ){
+        alert("Đăng nhập thành công");
 
-    window.location.href = "index.html";
-  } else {
-    alert("Sai tài khoản hoặc mật khẩu");
-  }
+        localStorage.setItem(
+            "isLogin",
+            "true"
+        );
+
+        window.location.href = "../index.html";
+    }
+    else{
+        alert("Sai tài khoản hoặc mật khẩu");
+    }
+
 });
+
